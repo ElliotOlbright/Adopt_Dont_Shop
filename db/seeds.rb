@@ -8,40 +8,86 @@
 
 Application.destroy_all
 PetApplication.destroy_all
-Pets.destroy_all
+Pet.destroy_all
 Shelter.destroy_all
 
-app1 = Application.create!(name: 'Caroline Tan', street: '2534 Tan Blvd', city: 'Boulder', state: 'Colorado', zip_code: 80204)
-app2 = Dealership.create!(name: 'Elways Dealership', address: '1234 fake st', open_weekends: true, years_open: 12)
-app3 = Dealership.create!(name: 'Sweet Rides', address: '6943 date st', open_weekends: false, years_open: 69)
-dealer4 = Dealership.create!(name: 'Sick Cruises', address: '2020 corona blvd', open_weekends: false, years_open: 20)
-dealer5 = Dealership.create!(name: 'White House Dealers', address: '1600 pennsylvania ave', open_weekends: true, years_open: 16)
-dealer6 = Dealership.create!(name: 'Could be motors', address: '5050 chance cr', open_weekends: false, years_open: 50)
-
-dealer1.cars.create!(model: 'WRX', make: 'Subaru', year: 2013, under_100k_miles: true)
-dealer1.cars.create!(model: 'Outback', make: 'Subaru', year: 1998, under_100k_miles: false)
-dealer1.cars.create!(model: 'Forester', make: 'Subaru', year: 2002, under_100k_miles: false)
-dealer1.cars.create!(model: 'impreza', make: 'Subaru', year: 2012, under_100k_miles: true)
-
-dealer2.cars.create!(model: 'MDX', make: 'Acura', year: 2006, under_100k_miles: false)
-dealer2.cars.create!(model: 'MLR', make: 'Acura', year: 1989, under_100k_miles: true)
-dealer2.cars.create!(model: 'TLX', make: 'Acura', year: 2009, under_100k_miles: true)
-dealer2.cars.create!(model: 'RLX', make: 'Acura', year: 2001, under_100k_miles: true)
-
-dealer3.cars.create!(model: 'x1', make: 'BMW', year: 2017, under_100k_miles: true)
-dealer3.cars.create!(model: 'm3', make: 'BMW', year: 1987, under_100k_miles: false)
-dealer3.cars.create!(model: 'Z4', make: 'BMW', year: 2013, under_100k_miles: true)
-
-dealer4.cars.create!(model: 'a7', make: 'Audi', year: 2009, under_100k_miles: true)
-dealer4.cars.create!(model: 'a3', make: 'Audi', year: 1999, under_100k_miles: false)
-
-dealer5.cars.create!(model: 'Konna', make: 'Hyundai', year: 2000, under_100k_miles: false)
-dealer5.cars.create!(model: 'Accent', make: 'Hyundai', year: 2015, under_100k_miles: true)
-dealer5.cars.create!(model: 'Sante Fe', make: 'Hyundai', year: 2006, under_100k_miles: true)
+#applications
+app1 = Application.create!(name: 'Caroline Tan', street: '2534 Tan Blvd', city: 'Boulder', state: 'Colorado', zip_code: 80204, application_status: 'pending')
+app2 = Application.create!(name: 'Ezze Alwfai', street: '1234 fake st', city: 'Lafayette', state: 'Colorado', zip_code: 80328, application_status: 'pending')
+app3 = Application.create!(name: 'Marla Shulz', street: '2020 Corona st', city: 'Denver', state: 'Colorado', zip_code: 80218, application_status: 'approved')
+app4 = Application.create!(name: 'Matt Kragen', street: '5522 California st', city: 'Denver', state: 'Colorado', zip_code: 80218, application_status: 'approved')
+app5 = Application.create!(name: 'Scott Berecki', street: '2222 Studio rd', city: 'Colorado Springs', state: 'Colorado', zip_code: 80907, application_status: 'rejected')
+app6 = Application.create!(name: 'Sami Peterson', street: '9341 Chicago st', city: 'Westminster', state: 'Colorado', zip_code: 80305, application_status: 'rejected')
+app7 = Application.create!(name: 'Taylor Varoglu', street: '1529 Beard st', city: 'Boulder', state: 'Colorado', zip_code: 80304, application_status: 'approve')
+app8 = Application.create!(name: 'Micheal Abbott', street: '6733 Washington st', city: 'Lyons', state: 'Colorado', zip_code: 80540, application_status: 'pending')
+app9 = Application.create!(name: 'Ozzie Osmonson', street: '2342 Pesto ln', city: 'Denver', state: 'Colorado', zip_code: 80019, application_status: 'rejected')
+app10 = Application.create!(name: 'Carina Sweets', street: '6354 Candy ln', city: 'Longmont', state: 'Colorado', zip_code: 80504, application_status: 'pending')
 
 
-dealer6.cars.create!(model: 'model s', make: 'Tesla', year: 2012, under_100k_miles: true)
-dealer6.cars.create!(model: 'cybertruck', make: 'Tesla', year: 2022, under_100k_miles: true)
+#shelters
+shelter_1 = Shelter.create!(name: "Denver Humane Society",
+                            city: "Denver",
+                            rank: 1,
+                            foster_program: "true")
+
+
+shelter_2 = Shelter.create!(name: "Boulder Humane Society",
+                            city: "Boulder",                        
+                            rank: 2,
+                            foster_program: "false")
+                            
+                            
+#pets
+pet1 = shelter_2.pets.create!(name: "Rex",
+                              breed: "Australian Shepherd",
+                              adoptable: true,
+                              age: 2)
+                           
+pet2 = shelter_2.pets.create!(name: "Lady",
+                              breed: "Shepherd Mix",
+                              adoptable: true,
+                              age: 1)
+
+pet3 = shelter_2.pets.create!(name: "Osco",
+                              breed: "Springer-Spaniel",
+                              adoptable: true,
+                              age: 4)
+
+pet4 = shelter_2.pets.create!(name: "Jack",
+                              breed: "Pitbull",
+                              adoptable: true,
+                              age: 7)
+
+pet5 = shelter_1.pets.create!(name: "Jibbs",
+                              breed: "Pug",
+                              adoptable: true,
+                              age: 5)
+
+pet6 = shelter_1.pets.create!(name: "Jax",
+                              breed: "Lab Mix",
+                              adoptable: true,
+                              age: 4)
+
+pet7 = shelter_1.pets.create!(name: "Bianca",
+                              breed: "Golden Retriever",
+                              adoptable: true,
+                              age: 2)
+
+pet8 = shelter_1.pets.create!(name: "Beans",
+                              breed: "German Shepherd",
+                              adoptable: true,
+                              age: 9)
+
+pet9 = shelter_1.pets.create!(name: "Stella",
+                              breed: "Chihuahua",
+                              adoptable: true,
+                              age: 12)
+
+pet10 = shelter_1.pets.create!(name: "Penelope",
+                              breed: "Bulldog",
+                              adoptable: true,
+                              age: 12)
+ 
 
 
 
