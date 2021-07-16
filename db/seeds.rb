@@ -6,13 +6,14 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-#Dealership and Cars Seed
-Car.destroy_all
-Dealership.destroy_all
+Application.destroy_all
+PetApplication.destroy_all
+Pets.destroy_all
+Shelter.destroy_all
 
-dealer1 = Dealership.create!(name: 'Lit Motors', address: '4200 high st', open_weekends: true, years_open: 42)
-dealer2 = Dealership.create!(name: 'Elways Dealership', address: '1234 fake st', open_weekends: true, years_open: 12)
-dealer3 = Dealership.create!(name: 'Sweet Rides', address: '6943 date st', open_weekends: false, years_open: 69)
+app1 = Application.create!(name: 'Caroline Tan', street: '2534 Tan Blvd', city: 'Boulder', state: 'Colorado', zip_code: 80204)
+app2 = Dealership.create!(name: 'Elways Dealership', address: '1234 fake st', open_weekends: true, years_open: 12)
+app3 = Dealership.create!(name: 'Sweet Rides', address: '6943 date st', open_weekends: false, years_open: 69)
 dealer4 = Dealership.create!(name: 'Sick Cruises', address: '2020 corona blvd', open_weekends: false, years_open: 20)
 dealer5 = Dealership.create!(name: 'White House Dealers', address: '1600 pennsylvania ave', open_weekends: true, years_open: 16)
 dealer6 = Dealership.create!(name: 'Could be motors', address: '5050 chance cr', open_weekends: false, years_open: 50)
