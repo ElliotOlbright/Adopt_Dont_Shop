@@ -48,48 +48,53 @@ pet1 = shelter_2.pets.create!(name: "Rex",
 pet2 = shelter_2.pets.create!(name: "Lady",
                               breed: "Shepherd Mix",
                               adoptable: true,
-                              age: 1)
+                              age: 1,
+                              image: "dog2.png")
 
 pet3 = shelter_2.pets.create!(name: "Osco",
                               breed: "Springer-Spaniel",
                               adoptable: true,
-                              age: 4)
+                              age: 4,
+                              image: "dog3.png")
 
 pet4 = shelter_2.pets.create!(name: "Jack",
                               breed: "Pitbull",
                               adoptable: true,
-                              age: 7)
+                              age: 7,
+                              image: "dog4.png")
 
 pet5 = shelter_1.pets.create!(name: "Jibbs",
                               breed: "Pug",
                               adoptable: true,
-                              age: 5)
+                              age: 5,
+                              image: "dog5.png")
 
 pet6 = shelter_1.pets.create!(name: "Jax",
                               breed: "Lab Mix",
                               adoptable: true,
-                              age: 4)
+                              age: 4,
+                              image: "dog6.png"
+                            )
 
 pet7 = shelter_1.pets.create!(name: "Bianca",
                               breed: "Golden Retriever",
                               adoptable: true,
-                              age: 2)
+                              age: 2,
+                              image: "dog7.png")
 
 pet8 = shelter_1.pets.create!(name: "Beans",
                               breed: "German Shepherd",
                               adoptable: true,
-                              age: 9)
+                              age: 9,
+                              image: "dog8.png")
 
 pet9 = shelter_1.pets.create!(name: "Stella",
                               breed: "Chihuahua",
                               adoptable: true,
-                              age: 12)
+                              age: 12,
+                              image: "dog9.png")
 
-pet10 = shelter_1.pets.create!(name: "Penelope",
-                              breed: "Bulldog",
-                              adoptable: true,
-                              age: 12)
- 
+
 
 
 
