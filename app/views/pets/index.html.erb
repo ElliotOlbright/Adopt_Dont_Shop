@@ -1,11 +1,21 @@
-<body style="background-color: white;">
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-color: white;
+  background-image: none;
+}
+</style>
+</head>
+
 <h1>Pets Page, display pet index here</h1>
 
 <% @pets.each do |pet| %>
   <h1><%= link_to pet.name, "pets/#{pet.id}"%></h1>
     <p>
-      <%= pet.breed %>
-      <%= pet.age %>
+      <%= pet.breed %><br>
+      <%= pet.age %><br>
     </p>
 <% end %>
 </body>

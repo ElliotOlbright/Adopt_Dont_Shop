@@ -1,3 +1,9 @@
 <h1>App Show page</h1>
 
 <h2> <%= @app.name %> </h2>
+<p>
+Address: <%= @app.street %> <%= @app.city%>, <%= @app.state %>, <%= @app.zip_code %><br>
+I'm a good fit because: <%= @app.description %><br>
+
+Application Status: <%= @app.application_status %>
+</p>
