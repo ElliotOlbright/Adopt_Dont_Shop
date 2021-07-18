@@ -1,0 +1,11 @@
+<body style="background-color: white;">
+<h1>Pets Page, display pet index here</h1>
+
+<% @pets.each do |pet| %>
+<p>
+  <%= pet.name %>
+  <%= pet.breed %>
+  <%= pet.age %>
+</p>
+<% end %>
+</body>
