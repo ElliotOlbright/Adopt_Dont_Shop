@@ -41,7 +41,9 @@ shelter_2 = Shelter.create!(name: "Boulder Humane Society",
 pet1 = shelter_2.pets.create!(name: "Rex",
                               breed: "Australian Shepherd",
                               adoptable: true,
-                              age: 2)
+                              age: 2,
+                              image: "dog1.png")
+
                            
 pet2 = shelter_2.pets.create!(name: "Lady",
                               breed: "Shepherd Mix",

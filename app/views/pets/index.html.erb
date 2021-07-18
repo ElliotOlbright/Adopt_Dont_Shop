@@ -14,6 +14,7 @@ body {
 <% @pets.each do |pet| %>
   <h1><%= link_to pet.name, "pets/#{pet.id}"%></h1>
     <p>
+      <%= image_tag "#{pet.image}", :size => '200x200' %>
       <%= pet.breed %><br>
       <%= pet.age %><br>
     </p>
