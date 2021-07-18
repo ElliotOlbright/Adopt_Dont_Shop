@@ -5,8 +5,9 @@ Rails.application.routes.draw do
 
   resources :pets
 
-  resources :shelters do
-    resources :pets, controller: "shelter_pets", only: [:index, :new, :create]
-  end
+  get '/admin/shelters', to: 'admin_shelters#index'
+  get '/admin/shelters/:id', to: 'admin_shelters#show'
 
+  get '/admin/applications', to: 'admin_applications#index'
+  get '/admin/applications/:id', to: 'admin_applications#show'
 end

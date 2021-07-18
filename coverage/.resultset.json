@@ -244,12 +244,182 @@
           null,
           null,
           1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          null,
+          1,
+          1,
           null
         ]
       },
       "/Users/elliotolbright/turing/mod2/projects/adopt_dont_shop/app/helpers/application_helper.rb": {
         "lines": [
           1,
+          null
+        ]
+      },
+      "/Users/elliotolbright/turing/mod2/projects/adopt_dont_shop/spec/features/pets/index_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          3,
+          null,
+          null,
+          null,
+          null,
+          3,
+          null,
+          null,
+          null,
+          3,
+          null,
+          null,
+          null,
+          null,
+          3,
+          null,
+          null,
+          null,
+          null,
+          3,
+          null,
+          null,
+          null,
+          null,
+          3,
+          null,
+          null,
+          null,
+          3,
+          null,
+          null,
+          null,
+          1,
+          null,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/elliotolbright/turing/mod2/projects/adopt_dont_shop/spec/features/pets/show_spec.rb": {
+        "lines": [
+
+        ]
+      },
+      "/Users/elliotolbright/turing/mod2/projects/adopt_dont_shop/spec/features/shelters/index_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          3,
+          null,
+          null,
+          null,
+          null,
+          3,
+          null,
+          null,
+          null,
+          3,
+          null,
+          null,
+          null,
+          null,
+          3,
+          null,
+          null,
+          null,
+          null,
+          3,
+          null,
+          null,
+          null,
+          null,
+          3,
+          null,
+          null,
+          null,
+          3,
+          null,
+          null,
+          null,
+          1,
+          null,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/elliotolbright/turing/mod2/projects/adopt_dont_shop/spec/features/welcome/index_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          3,
+          null,
+          null,
+          1,
+          null,
+          1,
+          1,
+          null,
+          null,
+          1,
+          null,
+          1,
+          1,
+          null,
+          null,
+          1,
+          null,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/elliotolbright/turing/mod2/projects/adopt_dont_shop/spec/models/application_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          2,
+          2,
+          null,
           null
         ]
       },
@@ -327,8 +497,63 @@
           1,
           null
         ]
+      },
+      "/Users/elliotolbright/turing/mod2/projects/adopt_dont_shop/app/controllers/admin_applications_controller.rb": {
+        "lines": [
+          1,
+          1,
+          4,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/elliotolbright/turing/mod2/projects/adopt_dont_shop/app/controllers/application_controller.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/elliotolbright/turing/mod2/projects/adopt_dont_shop/app/controllers/pets_controller.rb": {
+        "lines": [
+          1,
+          1,
+          4,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/elliotolbright/turing/mod2/projects/adopt_dont_shop/app/controllers/admin_shelters_controller.rb": {
+        "lines": [
+          1,
+          1,
+          4,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/elliotolbright/turing/mod2/projects/adopt_dont_shop/app/controllers/welcome_controller.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          null
+        ]
       }
     },
-    "timestamp": 1626543747
+    "timestamp": 1626629138
   }
 }

@@ -2,10 +2,10 @@
 <h1>Pets Page, display pet index here</h1>
 
 <% @pets.each do |pet| %>
-<p>
-  <%= pet.name %>
-  <%= pet.breed %>
-  <%= pet.age %>
-</p>
+  <h1><%= link_to pet.name, "pets/#{pet.id}"%></h1>
+    <p>
+      <%= pet.breed %>
+      <%= pet.age %>
+    </p>
 <% end %>
 </body>
