@@ -1,3 +1,27 @@
 <h1>shelter show page</h1>
 
 <p><%= @shelter.name %></p>
+
+<%= form_tag "/admin/applications", method: :post do %>
+   <p>
+    <%= label_tag :name, 'Whats Your Name?' %>
+    <%= text_field_tag :name, 'Name'  %><br>
+  
+    <%= label_tag :street, "What's Your Street Address?" %>
+    <%= text_field_tag :street, 'Street' %><br>
+
+    <%= label_tag :city, "What City Do You Live In?" %>
+    <%= text_field_tag :city, 'City' %><br>
+
+    <%= label_tag :state, "What State Do You Live In?" %>
+    <%= text_field_tag :state, 'State' %><br>
+
+    <%= label_tag :zip_code, "What's Your Zip Code?" %>
+    <%= text_field_tag :zip_code, 'Zip Code' %><br>
+
+    <%= label_tag :description, "What Makes You A Good Fit" %>
+    <%= text_field_tag :description, 'Description' %><br>
+  
+    <%= submit_tag 'Submit' %>
+    </p>
+  <% end %>

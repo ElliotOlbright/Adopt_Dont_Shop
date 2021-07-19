@@ -9,7 +9,9 @@ body {
 </style>
 </head>
 
-<h1>Pets Page, display pet index here</h1>
+<p class="lead">Check Out All Our Awesome and Ready To Be Adopted Pets!</p>
+
+<p><%= link_to 'Start an Application', '/apps/new', method: :get %></p>
 
 <% @pets.each do |pet| %>
   <h1><%= link_to pet.name, "pets/#{pet.id}"%></h1>

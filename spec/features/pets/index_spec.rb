@@ -52,4 +52,9 @@ describe 'Pets page' do
     expect(current_path).to eq("/pets/#{@pet1.id}")
     expect(page).to have_content("#{@pet1.name}")
   end 
+
+  it 'can take the user to start a new application' do 
+    click_link('Start an Application')
+    expect(current_path).to eq('/apps/new')
+  end
 end 
