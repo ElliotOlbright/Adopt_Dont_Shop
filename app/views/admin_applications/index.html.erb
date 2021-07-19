@@ -2,7 +2,7 @@
 
 <% @applications.each do |app| %>
   <div>
-  <%= link_to app.name, "/admin/applications/#{app.id}" %>
+  <h1 style="text-align: center;"><%= link_to app.name, "/admin/applications/#{app.id}" %></h1>
   <p>
     <%= app.street %>
     <%= app.city %>
