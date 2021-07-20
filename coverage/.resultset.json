@@ -561,6 +561,12 @@
       "/Users/elliotolbright/turing/mod2/projects/adopt_dont_shop/app/controllers/application_controller.rb": {
         "lines": [
           1,
+          null,
+          1,
+          null,
+          1,
+          0,
+          null,
           null
         ]
       },
@@ -589,13 +595,25 @@
           1,
           0,
           null,
-          null,
-          null,
-          null,
-          null,
-          null,
+          0,
+          0,
           null,
           0,
+          0,
+          null,
+          null,
+          null,
+          1,
+          null,
+          1,
+          0,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
           null,
           null
         ]
@@ -625,6 +643,6 @@
         ]
       }
     },
-    "timestamp": 1626730620
+    "timestamp": 1626744193
   }
 }

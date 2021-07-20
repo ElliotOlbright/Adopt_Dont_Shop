@@ -22,17 +22,7 @@ html, body {
 	background-repeat: no-repeat;
 	background-position: bottom;
 	background-size: contain;
-
-	// .bg {
-	// 	background-image: url('/assets/hugginpuppy.jpg');
-	
-	// 	height: 100%; 
-	
-
-	// 	background-position: center;
-	// 	background-repeat: no-repeat;
-	// 	background-size: cover;
-	// }
+	background-attachment: fixed;
 }
 
 .body_white{
@@ -143,4 +133,3 @@ p {
 							background-color: #f2f2f277;
 							padding: 20px;
 						 }
-
