@@ -1,0 +1,13 @@
+<p class="lead">Applications</p>
+
+<% @applications.each do |app| %>
+  <div>
+  <h2 style="text-align: center;"><%= link_to app.name, "/admin/applications/#{app.id}" %></h2>
+  <p>
+    <%= app.street %>
+    <%= app.city %>
+    <%= app.state %>
+    <%= app.zip_code %>
+  </p>
+  </div>
+<% end %>

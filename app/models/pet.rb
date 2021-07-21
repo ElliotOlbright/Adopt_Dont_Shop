@@ -6,4 +6,6 @@ class Pet < ApplicationRecord
 def find_pet_app_status(application_id)
   pet_applications.find_by(application_id: application_id).status
 end 
+
+
 end 

@@ -24,6 +24,7 @@ app9 = Application.create!(name: 'Ozzie Osmonson', street: '2342 Pesto ln', city
 app10 = Application.create!(name: 'Carina Sweets', street: '6354 Candy ln', city: 'Longmont', state: 'Colorado', zip_code: 80504, application_status: 'pending', description: "I'm a good person")
 
 
+
 #shelters
 shelter_1 = Shelter.create!(name: "Denver Humane Society",
                             city: "Denver",
@@ -35,7 +36,32 @@ shelter_2 = Shelter.create!(name: "Boulder Humane Society",
                             city: "Boulder",                        
                             rank: 2,
                             foster_program: "false")
-                            
+
+shelter_3 = Shelter.create!(name: 'Aurora shelter', 
+                            city: 'Aurora, CO', 
+                            foster_program: false, 
+                            rank: 9)
+
+shelter_4 = Shelter.create!(name: 'Littleton shelter', 
+                            city: 'Littleton, CO', 
+                            foster_program: true, 
+                            rank: 7)
+
+shelter_5 = Shelter.create!(name: 'Denver shelter', 
+                            city: 'Denver, CO', 
+                            foster_program: true, 
+                            rank: 10)
+
+shelter_6 = Shelter.create!(name: 'Centennial shelter', 
+                            city: 'Cenntenial, CO', 
+                            foster_program: false, 
+                            rank: 4)
+
+shelter_7 = Shelter.create!(name: 'Englewood shelter', 
+                            city: 'Englewood, CO', 
+                            foster_program: true, 
+                            rank: 2)
+
                             
 #pets
 pet1 = shelter_2.pets.create!(name: "Rex",
@@ -49,27 +75,28 @@ pet2 = shelter_2.pets.create!(name: "Lady",
                               breed: "Shepherd Mix",
                               adoptable: true,
                               age: 1,
-                              image: "dog2.png")
+                              image: "dog2.png",
+                            )
 
-pet3 = shelter_2.pets.create!(name: "Osco",
+pet3 = shelter_3.pets.create!(name: "Osco",
                               breed: "Springer-Spaniel",
                               adoptable: true,
                               age: 4,
                               image: "dog3.png")
 
-pet4 = shelter_2.pets.create!(name: "Jack",
+pet4 = shelter_3.pets.create!(name: "Jack",
                               breed: "Pitbull",
                               adoptable: true,
                               age: 7,
                               image: "dog4.png")
 
-pet5 = shelter_1.pets.create!(name: "Jibbs",
+pet5 = shelter_4.pets.create!(name: "Jibbs",
                               breed: "Pug",
                               adoptable: true,
                               age: 5,
                               image: "dog5.png")
 
-pet6 = shelter_1.pets.create!(name: "Jax",
+pet6 = shelter_4.pets.create!(name: "Jax",
                               breed: "Lab Mix",
                               adoptable: true,
                               age: 4,
@@ -93,6 +120,8 @@ pet9 = shelter_1.pets.create!(name: "Stella",
                               adoptable: true,
                               age: 12,
                               image: "dog9.png")
+
+p_a1 = app1.pet_applications.create!(pet_id: pet2.id, application_id: app1.id)
 
 
 

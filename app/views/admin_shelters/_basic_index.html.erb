@@ -1,0 +1,8 @@
+<div class="inline">
+  <% @shelters.each do |shelter| %>
+    <div class="inline"> 
+    <h2 style="text-align: center;"><%= link_to shelter.name, "/admin/shelters/#{shelter.id}"%></h2>
+      <p><%= shelter.city %></p>
+    </div>
+  <% end %>
+</div>

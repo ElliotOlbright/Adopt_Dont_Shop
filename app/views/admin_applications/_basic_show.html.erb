@@ -1,0 +1,20 @@
+<body>
+  <h2 style="text-align: center;"> <%= @app.name %> </h2>
+  <p>
+  Address: <%= @app.street %> <%= @app.city%>, <%= @app.state %>, <%= @app.zip_code %><br>
+
+  Application Status: <%= @app.application_status %><br>
+  Pets Pending: <br>
+
+  <% @app.pets.each do |pet|  %>
+  <p>
+    <%= pet.name  %> <br>
+    <%= pet.find_pet_app_status(@app.id) %>
+    <% if pet.find_pet_app_status(@app.id) == 'Pending' %>
+      <%= button_to 'Approve', "/admin/applications/#{@app.id}", method: :patch, params: {pet_id: pet.id, status: 'approved'}%>\<br>
+      <%= button_to 'Reject', "/admin/applications/#{@app.id}", method: :patch, params: {pet_id: pet.id, status: 'rejected'}%>\<br>
+    <% end %>
+    </p>
+  <% end %>
+  </p>
+</body>

@@ -1,8 +1,6 @@
-<h1>admin sheleter page</h1>
+<p class="lead">Shelters.</p>
 
-<% @shelters.each do |shelter| %>
-<div> 
-<h2><%= link_to shelter.name, "/admin/shelters/#{shelter.id}"%></h2>
-  <p><%= shelter.city %></p>
-</div>
-<% end %>
+<%= render 'basic_index' %>
+<br>
+<br>
+<%= render 'pending' %>

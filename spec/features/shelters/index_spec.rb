@@ -48,6 +48,7 @@ describe 'Pets page' do
     click_link("#{@shelter_1.name}")
 
     expect(current_path).to eq("/admin/shelters/#{@shelter_1.id}")
+    save_and_open_page
     expect(page).to have_content("#{@shelter_1.name}")
   end 
 end 
