@@ -8,15 +8,15 @@
   <%= render 'pets_on_app' %>
 <% end %>
 
-<% if @app.application_status == 'pending' %>
+<% if @app.application_status == 'In Progress' %>
   <%= render 'search_pets' %>
 <% end %>
 
-<% if @app.application_status == 'pending' %>
+<% if @app.application_status == 'In Progress' %>
   <%= render 'adopt_pet' %>
 <% end %>
 
-<% unless @app.application_status == 'pending' %>
+<% if @app.pets.any? && @app.application_status == 'In Progress' %>
   <%= render 'submit' %>
 <% end %>
 

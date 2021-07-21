@@ -5,10 +5,19 @@ class AppsController < ApplicationController
   def new 
   end 
 
+  def show 
+    @app = Application.find(params[:id])
+    if params[:search_by_name].present?
+      @pets = Pet.where("lower(name) like ?", "%#{params[:search_by_name].downcase}%")
+    else
+      @pets = []
+    end
+  end 
+
   def create
-    app = Application.new(app_params)
-    if app.save
-      redirect_to "/admin/applications/#{app.id}"
+    @app = Application.new(app_params)
+    if @app.save
+      redirect_to "/apps/#{@app.id}"
     else
       redirect_to "/apps/new"
       flash[:alert] = "Don't Be Silly! Please Fill Out All Required Fields!"
@@ -16,12 +25,26 @@ class AppsController < ApplicationController
   end
 
   def update 
+    if params[:description].present?
+      @application = Application.find(params[:id])
+      @application.update({ 
+        description: params[:description],
+        application_status: 'Pending'
+      })
+      redirect_to "/apps/#{params[:id]}"
+    else
     @pa = PetApplication.create(
                                 pet_id:(params[:pet_id]),
                                 application_id:(params[:id])
     )
-    
-    redirect_to "/admin/applications/#{params[:id]}"
+    redirect_to "/apps/#{params[:id]}"
+    end 
+  end
+
+  def submit 
+    @application = Application.find(params[:id])
+    @application.update(app_params)
+    @app.save
   end
 
   private

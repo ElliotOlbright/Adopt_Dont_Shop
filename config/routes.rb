@@ -5,13 +5,19 @@ Rails.application.routes.draw do
   get '/about', to: 'welcome#about'
 
   resources :pets
-  resources :apps
+
+  get '/apps/new', to: 'apps#new'
+  post '/apps', to: 'apps#create'
+  get '/apps/:id', to: 'apps#show'
+  patch '/apps/:id', to: 'apps#update'
+  patch '/apps/:id', to: 'apps#submit'
+
 
   get '/admin/shelters', to: 'admin_shelters#index'
   get '/admin/shelters/:id', to: 'admin_shelters#show'
   
-  post '/admin/applications', to: 'apps#create'
-  patch '/admin/applications/:id', to: 'apps#update'
+  # post '/admin/applications', to: 'apps#create'
+  # patch '/admin/applications/:id', to: 'apps#update'
   get '/admin/applications', to: 'admin_applications#index'
   get '/admin/applications/:id', to: 'admin_applications#show'
  

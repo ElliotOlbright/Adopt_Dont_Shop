@@ -14,7 +14,7 @@
 
  
   <div class="inline">
-    <%= form_tag "/admin/applications", method: :post do %>
+    <%= form_tag "/apps", method: :post do %>
     <p>
       <%= label_tag :name, 'Whats Your Name?' %>
       <%= text_field_tag :name%><br><br>
@@ -30,9 +30,6 @@
 
       <%= label_tag :zip_code, "What's Your Zip Code?" %>
       <%= text_field_tag :zip_code%><br><br>
-
-      <%= label_tag :description, "What Makes You A Good Fit" %>
-      <%= text_field_tag :description%><br><br>
     
       <%= submit_tag 'Submit' %>
       </p>

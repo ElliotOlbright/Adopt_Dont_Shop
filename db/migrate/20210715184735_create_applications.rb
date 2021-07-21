@@ -6,7 +6,7 @@ class CreateApplications < ActiveRecord::Migration[5.2]
       t.string :city
       t.string :state
       t.integer :zip_code
-      t.string :application_status, :default => 'Pending'
+      t.string :application_status, :default => 'In Progress'
 
       t.timestamps
     end
