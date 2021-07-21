@@ -20,6 +20,7 @@ class AppsController < ApplicationController
                                 pet_id:(params[:pet_id]),
                                 application_id:(params[:id])
     )
+    
     redirect_to "/admin/applications/#{params[:id]}"
   end
 

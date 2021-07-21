@@ -251,8 +251,9 @@
           null,
           1,
           1,
-          1,
           null,
+          1,
+          1,
           1,
           1,
           null,
@@ -262,6 +263,21 @@
       "/Users/elliotolbright/turing/mod2/projects/adopt_dont_shop/app/helpers/application_helper.rb": {
         "lines": [
           1,
+          null,
+          1,
+          0,
+          null,
+          0,
+          null,
+          0,
+          null,
+          0,
+          null,
+          0,
+          null,
+          0,
+          null,
+          null,
           null
         ]
       },
@@ -552,8 +568,14 @@
           4,
           null,
           null,
+          null,
           1,
           1,
+          1,
+          0,
+          null,
+          1,
+          null,
           null,
           null
         ]
@@ -594,7 +616,6 @@
           null,
           1,
           0,
-          null,
           0,
           0,
           null,
@@ -604,9 +625,18 @@
           null,
           null,
           1,
+          0,
+          0,
+          0,
+          null,
+          0,
+          null,
+          null,
+          1,
           null,
           1,
           0,
+          null,
           null,
           null,
           null,
@@ -643,6 +673,6 @@
         ]
       }
     },
-    "timestamp": 1626744193
+    "timestamp": 1626816398
   }
 }

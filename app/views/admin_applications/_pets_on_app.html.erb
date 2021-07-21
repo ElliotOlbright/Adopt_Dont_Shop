@@ -1,0 +1,8 @@
+<p>Pets on this App</p>
+
+<% @app.pets.each do |pet| %>
+  <p>
+    <%= pet.name %>
+    <%= pet.find_pet_app_status(@app.id) %>
+  </p>
+<% end %>
