@@ -54,7 +54,9 @@ describe 'Pets page' do
   end 
 
   it 'can take the user to start a new application' do 
+    save_and_open_page
     click_link('Start an Application')
     expect(current_path).to eq('/apps/new')
   end
+  
 end 

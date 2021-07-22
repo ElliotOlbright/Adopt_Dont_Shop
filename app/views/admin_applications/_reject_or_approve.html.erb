@@ -1,4 +1,0 @@
-  
-  
-  <%= button_to 'Approve', "/admin/applications/#{@app.id}", method: :patch, params: {pet_id: pet.id, status: 'approved'}%>\<br>
-  <%= button_to 'Reject', "/admin/applications/#{@app.id}", method: :patch, params: {pet_id: pet.id, status: 'rejected'}%>\<br>

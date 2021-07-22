@@ -2,7 +2,7 @@
 
 <% @app.pets.each do |pet| %>
   <p>
-    <%= pet.name %>
+    <%= pet.name.capitalize %>
     <%= pet.find_pet_app_status(@app.id) %>
   </p>
 <% end %>

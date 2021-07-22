@@ -41,12 +41,6 @@ class AppsController < ApplicationController
     end 
   end
 
-  def submit 
-    @application = Application.find(params[:id])
-    @application.update(app_params)
-    @app.save
-  end
-
   private
 
   def app_params
